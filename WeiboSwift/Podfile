@@ -1,0 +1,10 @@
+
+platform :ios, '8.0'
+
+target 'WeiboSwift' do
+
+use_frameworks!
+
+pod 'SnapKit' , '0.18.0'
+
+end
