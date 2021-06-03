@@ -13,9 +13,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+//    window?.rootViewController = MainViewController()  在这里搞是错误的
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //1.创建window
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        //2.创建根视图控制器
+        let rootVC = MainViewController()
+        
+        //3.设置为根控制器
+        window?.rootViewController = rootVC
+        
+        //4.设置window为主显窗口
+        window?.makeKeyAndVisible()
+        
+        
+        
+        
         return true
     }
 
